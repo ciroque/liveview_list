@@ -18,14 +18,14 @@ defmodule LiveviewList.Components do
 
   slot :title, required: false
 
-  slot :list_items, required: true
+  slot :list_item, required: false
 
   @spec list(map()) :: Phoenix.LiveView.Rendered.t()
   def list(assigns) do
     ~H"""
     <div>
-      <div><%= render_slot(:title) %></div>
-      <div><%= render_slot(:list_items) %></div>
+      <div><%= render_slot(@title) %></div>
+      <div><%= render_slot(@list_item) %></div>
     </div>
     """
   end
