@@ -35,10 +35,14 @@ defmodule LiveviewList.Components do
   @doc """
   Renders a List Item
   """
+  @doc type: :component
+
+  attr :classes, :string, required: false, default: "lvl-list_item"
+
   @spec list_item(map()) :: Phoenix.LiveView.Rendered.t()
   def list_item(assigns) do
     ~H"""
-    <div>
+    <div class={@classes}>
       <%= render_slot(@inner_block) %>
     </div>
     """
