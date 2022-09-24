@@ -50,5 +50,26 @@ defmodule LiveviewList.ComponentsTest do
       assert rendered =~ "Second Item"
       assert rendered =~ "Third Item"
     end
+
+    test "renders default class", %{assigns: assigns} do
+      assert rendered = rendered_to_string(~H"""
+             <LiveviewList.Components.list>
+               <:title>My Title</:title>
+             </LiveviewList.Components.list>
+             """)
+
+      assert rendered =~ "lvl-list"
+    end
+
+    test "renders specified classes", %{assigns: assigns} do
+      assert rendered = rendered_to_string(~H"""
+             <LiveviewList.Components.list classes="bordered marginalized">
+               <:title>My Title</:title>
+             </LiveviewList.Components.list>
+             """)
+
+      assert rendered =~ "bordered"
+      assert rendered =~ "marginalized"
+    end
   end
 end

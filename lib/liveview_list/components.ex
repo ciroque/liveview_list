@@ -16,6 +16,8 @@ defmodule LiveviewList.Components do
   """
   @doc type: :component
 
+  attr :classes, :string, required: false, default: "lvl-list"
+
   slot :title, required: false
 
   slot :list_item, required: false
@@ -23,7 +25,7 @@ defmodule LiveviewList.Components do
   @spec list(map()) :: Phoenix.LiveView.Rendered.t()
   def list(assigns) do
     ~H"""
-    <div>
+    <div class={@classes}>
       <div><%= render_slot(@title) %></div>
       <div><%= render_slot(@list_item) %></div>
     </div>
