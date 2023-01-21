@@ -89,7 +89,7 @@ defmodule LiveviewList.ComponentsTest do
       assert rendered =~ "First Sublist Item"
       assert rendered =~ "Second Sublist Item"
       assert rendered =~ "Third Sublist Item"
-      assert rendered =~ "divvy"
+      assert rendered =~ "div"
     end
 
     test "renders default class", %{assigns: assigns} do

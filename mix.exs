@@ -29,7 +29,7 @@ defmodule LiveviewList.MixProject do
       {:phoenix_html, "~> 3.2.0"},
       {:phoenix_live_view, "~> 0.18.0"},
       {:phoenix_pubsub, "~> 2.1.1"},
-      {:phoenix_view, "~> 1.1.2"},
+      {:phoenix_view, "~> 2.0"},
       {:plug, "~> 1.13.6"},
       {:plug_crypto, "~> 1.2.3"},
       {:telemetry, "~> 1.1.0"}
