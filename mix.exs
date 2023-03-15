@@ -25,14 +25,14 @@ defmodule LiveviewList.MixProject do
       {:dialyxir, "~> 1.2", only: [:dev], runtime: false},
       {:jason, "~> 1.0"},
       {:mime, "~> 2.0.3"},
-      {:phoenix, "~> 1.6.12"},
-      {:phoenix_html, "~> 3.2.0"},
-      {:phoenix_live_view, "~> 0.18.0"},
+      {:phoenix, "~> 1.6"},
+      {:phoenix_html, "~> 3.2"},
+      {:phoenix_live_view, "~> 0.18"},
       {:phoenix_pubsub, "~> 2.1.1"},
       {:phoenix_view, "~> 2.0"},
       {:plug, "~> 1.14"},
       {:plug_crypto, "~> 1.2.3"},
-      {:telemetry, "~> 1.1.0"}
+      {:telemetry, "~> 1.1"}
     ]
   end
 end
