@@ -26,12 +26,12 @@ defmodule LiveviewList.MixProject do
       {:jason, "~> 1.0"},
       {:mime, "~> 2.0.3"},
       {:phoenix, "~> 1.6"},
-      {:phoenix_html, "~> 3.2"},
+      {:phoenix_html, "~> 4.1"},
       {:phoenix_live_view, "~> 0.18"},
       {:phoenix_pubsub, "~> 2.1.1"},
       {:phoenix_view, "~> 2.0"},
       {:plug, "~> 1.14"},
-      {:plug_crypto, "~> 1.2.3"},
+      {:plug_crypto, "~> 2.0"},
       {:telemetry, "~> 1.1"}
     ]
   end
